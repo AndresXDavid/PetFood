@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #D2B48C; /* Un tono café claro */
-    color: #4A4A4A;
+    background-color: #1F2937; /* Fondo gris oscuro */
+    color: #F3F4F6; /* Texto blanco/gris claro */
     line-height: 1.6;
     margin: 0;
     padding: 20px;
@@ -11,19 +11,19 @@ body {
 }
 
 h1, h2 {
-    color: #6A4A3C; /* Un tono café oscuro para títulos */
+    color: #60A5FA; /* Azul vibrante para los títulos */
     text-align: center;
 }
 
 .section {
-    background: #F5F5DC; /* Un beige suave para las secciones */
+    background: #374151; /* Gris oscuro para los contenedores */
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     padding: 30px;
     margin: 20px 0;
     width: 100%;
     max-width: 650px;
-    border: 1px solid #CDB492;
+    border: 1px solid #4B5563;
 }
 
 form, button {
@@ -36,12 +36,14 @@ input[type="email"], input[type="password"], input[type="text"], input[type="num
     width: calc(100% - 22px);
     padding: 12px;
     border-radius: 6px;
-    border: 1px solid #CDB492;
+    border: 1px solid #4B5563;
+    background-color: #4B5563;
+    color: #F3F4F6;
     box-sizing: border-box;
 }
 
 button {
-    background-color: #6495ED; /* Un azul suave para los botones */
+    background-color: #60A5FA; /* Azul vibrante para los botones */
     color: white;
     padding: 12px 15px;
     border: none;
@@ -52,34 +54,34 @@ button {
 }
 
 button:hover {
-    background-color: #346599; /* Un azul más oscuro al pasar el cursor */
+    background-color: #3B82F6; /* Un tono de azul más oscuro al pasar el cursor */
 }
 
 #entradaBtn {
-    background-color: #5cb85c;
+    background-color: #10B981; /* Verde esmeralda para entradas */
 }
 
 #salidaBtn {
-    background-color: #d9534f;
+    background-color: #EF4444; /* Rojo para salidas */
 }
 
 .product-list {
     margin-top: 20px;
-    border-top: 1px dashed #CDB492;
+    border-top: 1px dashed #4B5563;
     padding-top: 20px;
 }
 
 .product-item {
-    background: #FFFAF0; /* Un blanco roto */
-    border: 1px solid #D2B48C;
+    background: #4B5563; /* Gris para los elementos de la lista */
+    border: 1px solid #6B7280;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 #auth-token, #login-status, #inventory-status {
     font-weight: bold;
     margin-top: 10px;
-    color: #346599;
+    color: #60A5FA;
 }
