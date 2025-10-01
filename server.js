@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
-
+const cors = require('cors'); 
 
 // Importa las rutas
 const publicRoutes = require('./routes/public');
@@ -12,12 +12,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 
-app.get('/', (req, res) => {
-  res.json({ message: '¡Bienvenido a la API de eCommerce de comida para mascotas!' });
-});
-
 // Middleware para procesar JSON
 app.use(express.json());
+app.use(cors()); 
+
+app.use(express.static('public'));
 
 // Conexión a la base de datos
 mongoose.connect(process.env.DATABASE_URL)
